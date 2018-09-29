@@ -3,5 +3,5 @@
 
 void CppRectangle::showRectangleSize()
 {
-    qDebug()<<"Width: "<<width()<<", Height: "<<height();
+    qDebug()<<"Width: "<<width()<<" Height: "<<height();
 }
