@@ -8,30 +8,30 @@ class CppRectangle : public QObject
     Q_PROPERTY(double width READ width WRITE setWidth NOTIFY widthChanged)
     Q_PROPERTY(double height READ height WRITE setHeight NOTIFY heightChanged)
 
-    double dWidth;
-    double dHeight;
+    double dfWidth;
+    double dfHeight;
 public:
 
     void setWidth(const double& width)
     {
-        dWidth = width;
+        dfWidth = width;
         emit widthChanged();
     }
 
     double width() const
     {
-        return dWidth;
+        return dfWidth;
     }
 
     void setHeight(const double& height)
     {
-        dHeight = height;
+        dfHeight = height;
         emit heightChanged();
     }
 
     double height() const
     {
-        return dHeight;
+        return dfHeight;
     }
 
     Q_INVOKABLE void showRectangleSize();
