@@ -2,7 +2,7 @@
 #define CPPRECTANGLE_H
 #include <QObject>
 
-class CppRectangle: public QObject
+class CppRectangle : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(double width READ width WRITE setWidth NOTIFY widthChanged)
