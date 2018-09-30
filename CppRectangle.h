@@ -16,8 +16,6 @@ public:
     void setWidth(const double& width)
     {
         dWidth = width;
-        int i = 0;
-        ++i;
         emit widthChanged();
     }
 
