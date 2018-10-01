@@ -40,7 +40,6 @@ public:
 signals:
     void widthChanged();
     void heightChanged();
-
 };
 
 #endif // CPPRECTANGLE_H
