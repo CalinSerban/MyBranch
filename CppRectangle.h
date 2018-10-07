@@ -24,9 +24,9 @@ public:
         return dWidth;
     }
 
-    void setHeight(const double& height)
+    void setHeight(const double& dfHeight)
     {
-        dHeight = height;
+        dHeight = dfHeight;
         emit heightChanged();
     }
 
