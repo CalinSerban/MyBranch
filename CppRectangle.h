@@ -30,7 +30,7 @@ public:
         emit heightChanged();
     }
 
-    double height() const
+    double height() const //get height
     {
         return dHeight;
     }
