@@ -2,12 +2,6 @@
 #define CPPRECTANGLE_H
 #include <QObject>
 
-#if defined QML_Practice
- #define QMLPractice_COMMON_DLLSPEC Q_DECL_EXPORT
-#else
- #define QMLPractice_COMMON_DLLSPEC Q_DECL_IMPORT
-#endif
-
 class Sum : public QObject
 {
     Q_OBJECT
