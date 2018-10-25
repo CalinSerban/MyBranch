@@ -2,6 +2,7 @@
 #define CPPRECTANGLE_H
 #include <QObject>
 
+//new class
 class Sum : public QObject
 {
     Q_OBJECT
