@@ -4,21 +4,21 @@
 
 CppRectangle::CppRectangle()
 {
-    pSum = new Sum();
+    pSum1 = new Sum();
 }
 
 CppRectangle::~CppRectangle()
 {
-    delete pSum;
-    pSum = nullptr;
+    delete pSum1;
+    pSum1 = nullptr;
 }
 
 void CppRectangle::calculateStuff1()
 {
     QThread* pThread = new QThread();
-    pSum->moveToThread(pThread);
-    connect(pThread, SIGNAL(started()), pSum, SLOT(printNumbers()));
-    connect(pSum, SIGNAL(finishToPrint()), pThread, SLOT(quit()));
+    pSum1->moveToThread(pThread);
+    connect(pThread, SIGNAL(started()), pSum1, SLOT(printNumbers()));
+    connect(pSum1, SIGNAL(finishToPrint()), pThread, SLOT(quit()));
     pThread->start();
 }
 

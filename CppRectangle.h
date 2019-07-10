@@ -23,7 +23,7 @@ class CppRectangle : public QObject
     double dWidth;
     double dHeight;
     int iProgress;
-    Sum* pSum;
+    Sum* pSum1;
 public:
     CppRectangle();
     ~CppRectangle();
